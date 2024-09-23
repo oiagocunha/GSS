@@ -1,0 +1,173 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: #f3f4f6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background-color: #081e49;
+    color: white;
+    width: 100%;
+    padding-top: 2px;
+    padding-bottom: 5px;
+    border-radius: ;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin: 10px;
+
+}
+
+main {
+    height: 73.5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgb(16, 16, 16, 0.7), rgb(25, 25, 25, 0.7)), url(imagens/fundo.jpg);
+
+}
+
+.subtitulo {
+    margin-top: 1px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.container {
+    display: flex;
+}
+
+.Filmes {
+    background-color: rgb(255, 255, 255, 0.7);
+    margin: 0 80px;
+    width: 350px;
+    border-radius: 10px;
+    height: 40vh;
+}
+
+.Música {
+    background-color: rgb(255, 255, 255, 0.7);
+    margin: 0 80px;
+    width: 350px;
+    border-radius: 10px;
+    height: 40vh;
+}
+
+.Séries {
+    background-color: rgb(255, 255, 255, 0.7);
+    margin: 0 80px;
+    width: 350px;
+    border-radius: 10px;
+    height: 40vh;
+}
+
+img {
+    width: 320px;
+    height: 480px;
+    margin: 15px 15px 0 15px;
+    border-radius: 10px;
+}
+
+div a {
+    text-decoration: none;
+    color: rgb(255, 42, 0);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container h2 {
+    text-align: center;
+    margin: 15px;
+}
+
+.container p {
+    text-align: center;
+    margin: 15px;
+}
+
+.cardlinhas {
+    display: flex;
+    flex-basis: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.card h1 {
+    font-size: 20px;
+    align-content: center;
+}
+
+.card h2 {
+    font-size: 20px;
+    color: rgb(255, 42, 0);
+    align-content: center;
+
+}
+
+.linha1, .linha3, .linha5{
+    background-color:rgba(203, 197, 187, 0.921) ;
+
+}
+
+.linha2, .linha4, .linha6{
+    background-color:rgba(241, 227, 202, 0.921) ;
+
+}
+
+.card3, .card4 {
+    display: flex;
+    flex-basis: column;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+}
+
+.card b, .cardlinhas {
+    display: flex;
+    flex-basis: column;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+}
+
+.card5 {
+    padding-right: 50px;
+}
+
+button {
+    background-color: #081e49;
+    height: 30px;
+    border: none;
+    padding: 4px;
+    color: white;
+    width: 80%;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: black;
+    color: rgb(255, 228, 228);
+    padding: 2px;
+    font-size: 1.6rem;
+}
+
+.direitos {
+    width: 100%;
+    font-size: small;
+    text-align: center;
+}
