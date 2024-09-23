@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../Documents/GitHub/GeraTech"
+		},
+		{
+			"path": "../Geek Scape Space"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Geek Scape Space"
+	}
+}
