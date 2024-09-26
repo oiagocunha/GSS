@@ -135,7 +135,7 @@ footer {
 }
 
 
-@media (max-width: 430px) {
+@media (max-width: 768px) {
     header {
         display: flex;
         flex-direction: column;
@@ -188,7 +188,7 @@ footer {
     }
 
     .main-content h1 {
-        font-size: 1.4rem;
+        font-size: 250%;
     }
 
     .mtitulo {
