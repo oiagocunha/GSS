@@ -1,7 +1,5 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: #f3f4f6;
-    color: #333;
     margin: 0;
     padding: 0;
 }
@@ -11,67 +9,73 @@ header {
     background-color: #081e49;
     color: white;
     width: 100%;
+    height: 100%;
     padding-top: 2px;
     padding-bottom: 5px;
-    border-radius: ;
-
-}
-
-nav a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    margin: 10px;
-
-}
-
-main {
-    height: 73.5vh;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+}
+
+.titulo {
+    font-size: 0.9rem;
+    display: block;
+    text-align: left;
+    margin: 20px;
+}
+
+.menu {
+    display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(rgb(16, 16, 16, 0.7), rgb(25, 25, 25, 0.7)), url(imagens/fundo.jpg);
-
+    padding-top: 25px;
+    
 }
 
-.subtitulo {
-    margin-top: 1px;
-}
-
-.main-content {
+.menu .lista-menu {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 20px;
-    color: rgb(255, 255, 255);
+    list-style: none;
+    gap: 10px;
+    padding-bottom: 20px;
 }
 
-.container {
+.menu .lista-menu a {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    margin: 40px;
+    transition: 2ms ease-in;
+    position: relative;
+}
+
+.menu .lista-menu a::before {
+    content: ' ';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 0px;
+    height: 2px;
+    background-color: wheat;
+    transition: all 1s ease;
+}
+
+.menu .lista-menu a:hover::before {
+    width: 100%;
+    background-color: rgb(247, 247, 3);
+}
+
+main{
+    background: linear-gradient(rgb(16, 16, 16, 0.7), rgb(25, 25, 25, 0.7)), url(imagens/Fundo.png);
+
+}
+
+main h1{
     display: flex;
-}
-
-.Filmes {
-    background-color: rgb(255, 255, 255, 0.7);
-    margin: 0 80px;
-    width: 350px;
-    border-radius: 10px;
-    height: 40vh;
-}
-
-.Música {
-    background-color: rgb(255, 255, 255, 0.7);
-    margin: 0 80px;
-    width: 350px;
-    border-radius: 10px;
-    height: 40vh;
-}
-
-.Séries {
-    background-color: rgb(255, 255, 255, 0.7);
-    margin: 0 80px;
-    width: 350px;
-    border-radius: 10px;
-    height: 40vh;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 25px;
 }
 
 img {
@@ -87,14 +91,11 @@ div a {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.container h2 {
+.card {
+    display: flex;
+    justify-content: center;
     text-align: center;
-    margin: 15px;
-}
-
-.container p {
-    text-align: center;
-    margin: 15px;
+    
 }
 
 .cardlinhas {
@@ -102,7 +103,12 @@ div a {
     flex-basis: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    width: 100%;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    margin-left: 40px;
+    margin-bottom: 40px;
+    padding: 10px;
 }
 
 .card h1 {
@@ -117,17 +123,14 @@ div a {
 
 }
 
-.linha1, .linha3, .linha5{
-    background-color:rgba(203, 197, 187, 0.921) ;
-
+.cardlinhas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
 }
 
-.linha2, .linha4, .linha6{
-    background-color:rgba(241, 227, 202, 0.921) ;
-
-}
-
-.card3, .card4 {
+.card b {
     display: flex;
     flex-basis: column;
     justify-content: center;
@@ -135,15 +138,7 @@ div a {
     align-content: flex-start;
 }
 
-.card b, .cardlinhas {
-    display: flex;
-    flex-basis: column;
-    justify-content: center;
-    align-items: center;
-    align-content: flex-start;
-}
-
-.card5 {
+.card {
     padding-right: 50px;
 }
 
@@ -170,4 +165,86 @@ footer {
     width: 100%;
     font-size: small;
     text-align: center;
+}
+
+@media (max-width: 780px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: #081e49;
+        color: white;
+        width: 100%;
+        height: 100%;
+        padding-top: 2px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .titulo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.7rem;
+    }
+
+    .lista-menu {
+        display: flex;
+        margin: auto;
+        font-size: 0.8rem;
+    }
+
+    main {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(rgb(16, 16, 16, 0.7), rgb(25, 25, 25, 0.7)), url(imagens/Fundo.png);
+    }
+
+    .card {
+        display: inline-block;
+        margin: 20px auto;
+        width: 100%;
+        max-width: 350px;
+        justify-content: center;
+        margin-right: %;
+    }
+
+    .cardlinhas{
+        display: block;
+    }
+
+    a img {
+        width: 70%;
+        height: 50%;
+    }
+
+    .texto h2{
+        font-size: 1rem;
+        width: 100%;
+        height: 100%;
+        padding: 5%;
+    }
+
+    .texto h3{
+        font-size: 1rem;
+        width: 100%;
+        height: 100%;
+        padding: 5%;
+    }
+
 }

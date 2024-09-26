@@ -64,7 +64,7 @@ header {
 }
 
 main {
-    height: 73.5vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -91,12 +91,16 @@ main {
     display: flex;
 }
 
+.linha1{
+    padding: ;
+}
+
 .cards {
     background-color: rgb(255, 255, 255, 0.7);
-    margin: 0 80px;
+    margin: 10% 50px;
     width: 350px;
     border-radius: 10px;
-    height: 40vh;
+    height: 45vh;
 }
 
 img {
