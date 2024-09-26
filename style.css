@@ -135,7 +135,7 @@ footer {
 }
 
 
-@media (max-width: 426px) {
+@media (max-width: 780px) {
 
     * {
         margin: 0;
@@ -236,12 +236,10 @@ footer {
 
     .cards {
         margin-bottom: 15%;
-        padding-bottom: 50px;
+        padding-bottom: 300px;
         margin: 25px auto;
-        /* Isso centraliza os elementos e evita margens laterais que possam causar overflow */
         width: 100%;
-        /* Ajuste para que eles ocupem 100% da largura disponível */
         max-width: 350px;
-        /* Mantém um tamanho máximo apropriado */
+        
     }
 }
