@@ -200,9 +200,10 @@ footer {
     }
 
     .lista-menu {
+        font-size: 0.5rem;
         display: flex;
-        margin: auto;
-        font-size: 0.8rem;
+        width: 100%;
+        margin: 0 5%;
     }
 
     main {
