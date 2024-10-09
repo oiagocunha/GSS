@@ -1,0 +1,265 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background-color: #081e49;
+    color: white;
+    width: 100%;
+    padding-top: 2px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.titulo {
+    font-size: 0.9rem;
+    display: block;
+    text-align: left;
+    margin: 20px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+}
+
+.menu .lista-menu {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+
+.menu .lista-menu a {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    margin: 40px;
+    transition: 2ms ease-in;
+    position: relative;
+}
+
+.menu .lista-menu a::before {
+    content: ' ';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 0px;
+    height: 2px;
+    background-color: wheat;
+    transition: all 1s ease;
+}
+
+.menu .lista-menu a:hover::before {
+    width: 100%;
+    background-color: rgb(247, 247, 3);
+}
+
+header {
+    text-align: center;
+    background-color: #081e49;
+    color: white;
+    width: 100vw;
+     
+}
+
+header p {
+    color: white;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin: 10px;
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    background: linear-gradient(rgb(16, 16, 16, 0.7), rgb(25, 25, 25, 0.7)), url(imagens/Fundo.png);
+
+}
+
+.intro{
+    background-color: #fff;    
+    color: #000000;
+    border-radius: 10px;
+}
+
+.intro h1 {
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.intro p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 3px;
+    width: 65%;
+    margin-left: 16%;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+
+.sub-titulo {
+    font-size: 2em;
+    color: #ff0d0d;
+    margin-bottom: 15px;
+}
+
+.card img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.4em;
+    color: #0c0266;
+    margin-top: 20px;
+}
+
+strong {
+    display: block;
+    margin-top: 15px;
+    font-size: 1.2em;
+    color: #ff4a4a;
+}
+
+P {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 10px 0;
+    color: #000000;
+}
+
+
+
+footer , footer p {
+    background-color: black;
+    color: rgb(255, 228, 228);
+    padding: 2px;
+    width: 100vw;
+    font-size: 1.6rem;
+}
+
+.direitos p {
+    width: 100%;
+    font-size: small;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    header {
+        text-align: center;
+        background-color: #081e49;
+        color: white;
+        width: 100%;
+        padding-top: 2px;
+        padding-bottom: 5px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .titulo {
+        font-size: 0.9rem;
+        display: block;
+        text-align: left;
+        margin: 20px;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: #081e49;
+        color: white;
+        width: 100%;
+        height: 100%;
+        padding-top: 2px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header .titulo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.7rem;
+    }
+
+    header .titulo p {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.6rem;
+    }
+
+    .lista-menu {
+        font-size: 0.5rem;
+        display: flex;
+        width: 100%;
+        margin: 0 5%;
+    }
+
+    .intro h1 {
+        font-size: 2em;
+    }
+
+    .intro p {
+        font-size: 1.1em;
+    }
+
+    .sub-titulo {
+        font-size: 1.8em;
+    }
+
+    .card img {
+        max-height: 300px;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+}
